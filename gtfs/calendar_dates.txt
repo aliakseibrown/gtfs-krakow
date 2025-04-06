@@ -1,0 +1,9 @@
+service_id,date,exception_type
+service_1,20250421,2
+service_5,20250501,2
+service_5,20250619,2
+service_2,20250503,2
+service_3,20250421,1
+service_3,20250501,1
+service_3,20250503,1
+service_3,20250619,1
