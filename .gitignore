@@ -1,2 +1,5 @@
 gtfs
 .DS_Store
+cache
+*.pyc
+*.pyo
