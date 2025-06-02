@@ -76,21 +76,21 @@ Basing on those information is possible to create relevant metric describing how
 ## Data visualization
 ### GTFS public transport
 #### Line's frequency
-![alt text](newplot.png)
+![alt text](images/newplot.png)
 
 As we can observe there are several bus/tram lines what goes particularly often. It might be good point to start trafic optimalization, because maybe this lines has only few important points and beetwen them routes can be splitted into different lines.
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 Results are resonable, in city center is the biggest trafic and less in suburbs. 
 
 ### OSM road data 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 As we can see area covered by road's data is bigger than covered by bus. This images shows data are detailed enough.
 
 ### Integrated
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 As we can see in city center are mostly residential and primary roads. There is only one road classified as motorway.
 
@@ -98,26 +98,26 @@ As we can see in city center are mostly residential and primary roads. There is 
 ## Graphs centrality metrics
 ### GTFS public transport 
 #### Eigenvector centrality
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 As we can see results are intuitive, in city center is the biggest bus traffic in one stop 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 After connection with bus frequency we can see that, stops with the biggest centrality are connected with the most used roads.
 
 #### Pagerank:
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 Pagerank takes into account not only the number of connections but also their importance – how well-connected the neighboring stops are. High values usually appear at transfer hubs surrounded by other significant stops. These can be central interchange points with access to multiple lines.
 
 #### Betweenness centrality
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 Betweenness centrality measures how often a stop lies on the shortest path between other stops. High values are typical for transit points that connect different areas – often found on the outskirts of the city center or between districts. Such stops serve as key bridges in the network.
 
 #### Degree centrality
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 Degree centrality counts the number of direct connections a stop has. Stops with high values tend to be local hubs – for example, intersections of many bus lines – but are not necessarily central in the overall network.
 
@@ -135,17 +135,17 @@ Together, these metrics provide a more comprehensive view of the public transpor
 ### Integrated data
 
 #### Eigenvector centrality
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 
 In this case, the highest values appear at stops located near highway exits. These stops are well-connected to other important nodes in the network, acting as key access points for regional or intercity traffic entering the urban area. Their high centrality reflects their strategic position in linking major routes with local transit. Also it might cause high traffic, what should be splitted
 
 #### Pagerank
-![alt text](image-10.png)
+![alt text](images/image-10.png)
 
 Here, we can observe slightly higher values in the city center compared to other areas. This suggests that central stops are better connected within the overall structure of the network, linking to other important and frequently used stops, which increases their relative importance.
 
 ### Beetweness centrality
-![alt text](image-11.png)
+![alt text](images/image-11.png)
 
 In this case, the highest values are concentrated right in the city center. This indicates that many shortest paths between other stops pass through these central locations, making them critical transit points for passenger flow across the entire network.
 
