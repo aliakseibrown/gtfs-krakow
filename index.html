@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Krakow Transport Network Analysis - Results Dashboard</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f7f7f7; }
+    h1 { background: #ffffff; color: #000000; margin: 0; padding: 32px 0 18px 0; text-align: center; letter-spacing: 1px;}
+    h2 { margin: 48px 0 18px 0; color: #222; text-align: center; font-weight: 600;}
+    .chapter { margin: 0 auto 32px auto; max-width: 1200px; }
+    .cards {
+    display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; align-items: stretch;
+    }
+    .card {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 12px rgba(0,0,0,0.08); */
+    width: 250px;
+    height: 160px;
+    overflow: hidden;
+    display: flex; align-items: flex-end; justify-content: center;
+    /* transition: box-shadow 0.18s; */
+    margin-bottom: 10px;
+    }
+    /* .card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.16); } */
+    .card img {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /* filter: brightness(0.72); */
+    transition: filter 0.2s;
+    }
+    /* .card:hover img { filter: brightness(0.95); } */
+    .card-title {
+    position: relative;
+    z-index: 2;
+    color: #5c5c5c;
+    font-size: 0.92em;
+    font-weight: 600;
+    background: #fff;
+    padding: 10px 10px 6px 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+    .card-link { text-decoration: none; }
+    @media (max-width: 900px) {
+    .cards { flex-direction: column; align-items: center; }
+    .card { width: 95%; }
+    }
+    </style>
+</head>
+<body>
+  <h1>Krakow Transport Network Analysis<br>Results Dashboard</h1>
+
+  <!-- Chapter 2 -->
+  <div class="chapter">
+    <h2>2. GTFS Data Analysis</h2>
+    <div class="cards">
+      <a class="card-link" href="results/gtfs_graph/2_trips_per_route_direction.html" target="_blank">
+        <div class="card">
+          <img src="img/trips_per_route_bar_chart.png" alt="Trips per Route">
+          <div class="card-title">Trips per Route & Direction</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Chapter 4 -->
+  <div class="chapter">
+    <h2>4. Segment Utilization</h2>
+    <div class="cards">
+      <a class="card-link" href="results/gtfs_graph/4_5_segment_trip_distribution_interactive.html" target="_blank">
+        <div class="card">
+          <img src="img/segment_trip_count_histogram.jpeg" alt="Segment Trip Distribution">
+          <div class="card-title">Segment Trip Distribution</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/gtfs_graph/4_6_segment_usage_top20_bottom20.html" target="_blank">
+        <div class="card">
+          <img src="img/top_20_busiest_least_used_segments_map.jpeg" alt="Top/Bottom Segments">
+          <div class="card-title">Top 20 / Bottom 20 Segments</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/gtfs_graph/4_7_single_busiest_segment_map.html" target="_blank">
+        <div class="card">
+          <img src="img/busiest_segment_trip_count.jpeg" alt="Busiest Segment">
+          <div class="card-title">Busiest Segment Map</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Chapter 5 -->
+  <div class="chapter">
+    <h2>5. GTFS Stop Network & Centrality</h2>
+    <div class="cards">
+      <a class="card-link" href="results/gtfs_graph/5_gtfs_network_graph.html" target="_blank">
+        <div class="card">
+          <img src="img/stop_network_graph_zoom.jpeg" alt="GTFS Network Graph">
+          <div class="card-title">GTFS Stop Network Graph</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/gtfs_graph/5_1_eigen_centrality.html" target="_blank">
+        <div class="card">
+          <img src="img/eigenvector_centrality_map.jpeg" alt="Eigenvector Centrality">
+          <div class="card-title">Eigenvector Centrality</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/gtfs_graph/5_2_pagerank.html" target="_blank">
+        <div class="card">
+          <img src="img/pagerank_centrality_map.jpeg" alt="PageRank">
+          <div class="card-title">PageRank Centrality</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/gtfs_graph/5_3_betweenness_centrality.html" target="_blank">
+        <div class="card">
+          <img src="img/betweenness_centrality_map.jpeg" alt="Betweenness Centrality">
+          <div class="card-title">Betweenness Centrality</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/gtfs_graph/5_4_degree_centrality.html" target="_blank">
+        <div class="card">
+          <img src="img/degree_centrality_map.jpeg" alt="Degree Centrality">
+          <div class="card-title">Degree Centrality</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Chapter 6 -->
+  <div class="chapter">
+    <h2>6. OSM Street Network</h2>
+    <div class="cards">
+      <a class="card-link" href="results/osm_graph/6_krakow_osm_streets_graph.html" target="_blank">
+        <div class="card">
+          <img src="img/osm_street_network_map.jpeg" alt="OSM Streets">
+          <div class="card-title">Krakow OSM Streets Graph</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Chapter 7 -->
+  <div class="chapter">
+    <h2>7. Multimodal Network</h2>
+    <div class="cards">
+      <a class="card-link" href="results/merged_gtfs_osm/7_multimodal_network.html" target="_blank">
+        <div class="card">
+          <img src="img/multimodal_nodes_types_map.jpeg" alt="Multimodal Network">
+          <div class="card-title">Multimodal Network</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Chapter 8 -->
+  <div class="chapter">
+    <h2>8. Network Flow Capacities</h2>
+    <div class="cards">
+      <a class="card-link" href="results/merged_gtfs_osm/8_multimodal_network_flow.html" target="_blank">
+        <div class="card">
+          <img src="img/flow_capacity_map_2.jpeg" alt="Network Flow">
+          <div class="card-title">Network with Flow Capacities</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Chapter 9 -->
+  <div class="chapter">
+    <h2>9. Multimodal Centrality & Corridors</h2>
+    <div class="cards">
+      <a class="card-link" href="results/merged_gtfs_osm/9_1_multimodal_network_eigen.html" target="_blank">
+        <div class="card">
+          <img src="img/multimodal_eigenvector_centrality.jpeg" alt="Eigenvector Centrality">
+          <div class="card-title">Eigenvector Centrality (Multimodal)</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_1_multimodal_network_filtered_eigen.html" target="_blank">
+        <div class="card">
+          <img src="img/superhub_corridors_map.jpeg" alt="Filtered Eigenvector">
+          <div class="card-title">Filtered Eigenvector Centrality</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_1_superhub_corridors_filtered_5.html" target="_blank">
+        <div class="card">
+          <img src="img/superhub_corridors_zoom.jpeg" alt="Superhub Corridors">
+          <div class="card-title">Superhub Corridors</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_2_multimodal_network_pagerank.html" target="_blank">
+        <div class="card">
+          <img src="img/multimodal_pagerank_centrality.jpeg" alt="PageRank Multimodal">
+          <div class="card-title">PageRank Centrality (Multimodal)</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_2_top10_pagerank_nodes.html" target="_blank">
+        <div class="card">
+          <img src="img/top_pagerank_nodes_table.jpeg" alt="Top10 PageRank">
+          <div class="card-title">Top 10 PageRank Nodes</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_2_top_pagerank_far_from_center_multimodal.html" target="_blank">
+        <div class="card">
+          <img src="img/first_last_mile_distance_map.jpeg" alt="PageRank Far from Center">
+          <div class="card-title">PageRank Nodes Far from Center</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_3_multimodal_network_betweenness.html" target="_blank">
+        <div class="card">
+          <img src="img/multimodal_betweenness_centrality.jpeg" alt="Betweenness Multimodal">
+          <div class="card-title">Betweenness Centrality (Multimodal)</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_3_multimodal_network_betweenness_disrupted.html" target="_blank">
+        <div class="card">
+          <img src="img/bridge_removal_impact_map.jpeg" alt="Betweenness Disrupted">
+          <div class="card-title">Betweenness Centrality (Disrupted)</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_3_top10_betweenness_nodes.html" target="_blank">
+        <div class="card">
+          <img src="img/top_betweenness_nodes_map.jpeg" alt="Top10 Betweenness">
+          <div class="card-title">Top 10 Betweenness Nodes</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_3_top10_betweenness_nodes_disrupted.html" target="_blank">
+        <div class="card">
+          <img src="img/new_top_betweenness_nodes_map.jpeg" alt="Top10 Betweenness Disrupted">
+          <div class="card-title">Top 10 Betweenness Nodes (Disrupted)</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_4_multimodal_network_degree.html" target="_blank">
+        <div class="card">
+          <img src="img/multimodal_degree_centrality.jpeg" alt="Degree Centrality Multimodal">
+          <div class="card-title">Degree Centrality (Multimodal)</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_4_solution_dynamic_scheduling.html" target="_blank">
+        <div class="card">
+          <img src="img/top_5_degree_nodes_map.jpeg" alt="Dynamic Scheduling">
+          <div class="card-title">Dynamic Scheduling/Accessibility</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/9_5_multimodal_network_edge_betweenness.html" target="_blank">
+        <div class="card">
+          <img src="img/edge_betweenness_map.jpeg" alt="Edge Betweenness">
+          <div class="card-title">Edge Betweenness Centrality</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Chapter 10 -->
+  <div class="chapter">
+    <h2>10. Critical Node Analysis</h2>
+    <div class="cards">
+      <a class="card-link" href="results/merged_gtfs_osm/10_critical_nodes_map.html" target="_blank">
+        <div class="card">
+          <img src="img/combined_centrality_top_nodes_map.jpeg" alt="Critical Nodes Map">
+          <div class="card-title">Critical Nodes Map</div>
+        </div>
+      </a>
+      <a class="card-link" href="results/merged_gtfs_osm/10_critical_nodes_plot.html" target="_blank">
+        <div class="card">
+          <img src="img/combined_centrality_top_nodes_plot.jpeg" alt="Critical Nodes Plot">
+          <div class="card-title">Critical Nodes Plot</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Krakow Transport Network Analysis
+  </footer>
+</body>
+</html>
