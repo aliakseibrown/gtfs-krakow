@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_be29f8a2a3292571b89321e6bd03fa4a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_be29f8a2a3292571b89321e6bd03fa4a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_be29f8a2a3292571b89321e6bd03fa4a = L.map(
+                "map_be29f8a2a3292571b89321e6bd03fa4a",
+                {
+                    center: [50.0614, 19.9372],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4636d4ad8e5c2e890764eb7b517ae3ea = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4636d4ad8e5c2e890764eb7b517ae3ea.addTo(map_be29f8a2a3292571b89321e6bd03fa4a);
+        
+    
+            var marker_ba909b271567fcff90efe273185203c8 = L.marker(
+                [50.0250151, 19.9780775],
+                {
+}
+            ).addTo(map_be29f8a2a3292571b89321e6bd03fa4a);
+        
+    
+            var icon_b7d5f39dcee281b84aefd14a8f4dcb44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2879432c0ab30f6674a93ca3b045ee2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdfb6ea72f060c6060b4de5094009c46 = $(`<div id="html_cdfb6ea72f060c6060b4de5094009c46" style="width: 100.0%; height: 100.0%;">Highly Connected Stop 1: [ROAD]4395730226</div>`)[0];
+                popup_e2879432c0ab30f6674a93ca3b045ee2.setContent(html_cdfb6ea72f060c6060b4de5094009c46);
+            
+        
+
+        marker_ba909b271567fcff90efe273185203c8.bindPopup(popup_e2879432c0ab30f6674a93ca3b045ee2)
+        ;
+
+        
+    
+    
+                marker_ba909b271567fcff90efe273185203c8.setIcon(icon_b7d5f39dcee281b84aefd14a8f4dcb44);
+            
+    
+            var marker_a702d0d116ba97f247398cad89b0b677 = L.marker(
+                [50.0885094, 19.9333964],
+                {
+}
+            ).addTo(map_be29f8a2a3292571b89321e6bd03fa4a);
+        
+    
+            var icon_c99a01c6fa9847a50298017af2301172 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9ca4f4fe385514657860951b6213eae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d255b7924a232629ba5c7dc20461819f = $(`<div id="html_d255b7924a232629ba5c7dc20461819f" style="width: 100.0%; height: 100.0%;">Highly Connected Stop 2: [BUS]19.932163,50.089715</div>`)[0];
+                popup_a9ca4f4fe385514657860951b6213eae.setContent(html_d255b7924a232629ba5c7dc20461819f);
+            
+        
+
+        marker_a702d0d116ba97f247398cad89b0b677.bindPopup(popup_a9ca4f4fe385514657860951b6213eae)
+        ;
+
+        
+    
+    
+                marker_a702d0d116ba97f247398cad89b0b677.setIcon(icon_c99a01c6fa9847a50298017af2301172);
+            
+    
+            var marker_97aca4c7d163e11a7bf0a4a3ffc86297 = L.marker(
+                [50.0149331, 19.9452884],
+                {
+}
+            ).addTo(map_be29f8a2a3292571b89321e6bd03fa4a);
+        
+    
+            var icon_c6c951937b9b11a487e02f4007775f16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29c9d985acf9dd0c022c52109a6e32ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_352b87541e03dd6c857ebfcab75c15a7 = $(`<div id="html_352b87541e03dd6c857ebfcab75c15a7" style="width: 100.0%; height: 100.0%;">Highly Connected Stop 3: [BUS]19.94564,50.015009</div>`)[0];
+                popup_29c9d985acf9dd0c022c52109a6e32ba.setContent(html_352b87541e03dd6c857ebfcab75c15a7);
+            
+        
+
+        marker_97aca4c7d163e11a7bf0a4a3ffc86297.bindPopup(popup_29c9d985acf9dd0c022c52109a6e32ba)
+        ;
+
+        
+    
+    
+                marker_97aca4c7d163e11a7bf0a4a3ffc86297.setIcon(icon_c6c951937b9b11a487e02f4007775f16);
+            
+    
+            var marker_95b7ae05bcf4bffbb6d462584642ebce = L.marker(
+                [50.0956736, 20.0409083],
+                {
+}
+            ).addTo(map_be29f8a2a3292571b89321e6bd03fa4a);
+        
+    
+            var icon_d81a903004c75606e28c487b52992820 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f72a58baa247dd710a8f02f9cce9b3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37b50e0261ee92c82641d0d39f785186 = $(`<div id="html_37b50e0261ee92c82641d0d39f785186" style="width: 100.0%; height: 100.0%;">Highly Connected Stop 4: [ROAD]691538924</div>`)[0];
+                popup_3f72a58baa247dd710a8f02f9cce9b3e.setContent(html_37b50e0261ee92c82641d0d39f785186);
+            
+        
+
+        marker_95b7ae05bcf4bffbb6d462584642ebce.bindPopup(popup_3f72a58baa247dd710a8f02f9cce9b3e)
+        ;
+
+        
+    
+    
+                marker_95b7ae05bcf4bffbb6d462584642ebce.setIcon(icon_d81a903004c75606e28c487b52992820);
+            
+    
+            var marker_b268b166af1834bda5522fc329b37c66 = L.marker(
+                [50.0933919, 19.9218756],
+                {
+}
+            ).addTo(map_be29f8a2a3292571b89321e6bd03fa4a);
+        
+    
+            var icon_c7a4e587f565622fcde00cf6e91c2892 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e14484f4c4170d087fedad9c837df4d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_550300f15aa6bd87d129c8b0eb9ff074 = $(`<div id="html_550300f15aa6bd87d129c8b0eb9ff074" style="width: 100.0%; height: 100.0%;">Highly Connected Stop 5: [BUS]19.922981,50.090726</div>`)[0];
+                popup_e14484f4c4170d087fedad9c837df4d7.setContent(html_550300f15aa6bd87d129c8b0eb9ff074);
+            
+        
+
+        marker_b268b166af1834bda5522fc329b37c66.bindPopup(popup_e14484f4c4170d087fedad9c837df4d7)
+        ;
+
+        
+    
+    
+                marker_b268b166af1834bda5522fc329b37c66.setIcon(icon_c7a4e587f565622fcde00cf6e91c2892);
+            
+</script>
+</html>

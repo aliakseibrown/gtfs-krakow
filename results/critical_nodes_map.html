@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c78416443efde33b0291997edaed2d73 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c78416443efde33b0291997edaed2d73" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c78416443efde33b0291997edaed2d73 = L.map(
+                "map_c78416443efde33b0291997edaed2d73",
+                {
+                    center: [50.0614, 19.9372],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0f9bb3d0d5ab8c173d016296aeb9105a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0f9bb3d0d5ab8c173d016296aeb9105a.addTo(map_c78416443efde33b0291997edaed2d73);
+        
+    
+            var circle_marker_d763ce0da742dec183e654a43772e654 = L.circleMarker(
+                [50.0250151, 19.9780775],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_c78416443efde33b0291997edaed2d73);
+        
+    
+        var popup_e32d71d2630908d5b91ad70e7df44229 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e1d60a4d187e20736e937782c9b51869 = $(`<div id="html_e1d60a4d187e20736e937782c9b51869" style="width: 100.0%; height: 100.0%;"><b>Road Intersection</b><br>ID: [ROAD]4395730226<br>Composite Score: 0.556<br>Eigenvector: 1.29e-09<br>PageRank: 0.000367<br>Betweenness: 0.216<br>Degree: 0.00182<br>Mean Edge Betweenness: 0.0154</div>`)[0];
+                popup_e32d71d2630908d5b91ad70e7df44229.setContent(html_e1d60a4d187e20736e937782c9b51869);
+            
+        
+
+        circle_marker_d763ce0da742dec183e654a43772e654.bindPopup(popup_e32d71d2630908d5b91ad70e7df44229)
+        ;
+
+        
+    
+    
+            var circle_marker_5c06760d98c8b5d907203f1a9fee42cf = L.circleMarker(
+                [49.9961314, 19.8578364],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_c78416443efde33b0291997edaed2d73);
+        
+    
+        var popup_97aec81f5bedfbe89c75bf96e336c6e1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3a063c717a9b369b2520bec4155cc2b1 = $(`<div id="html_3a063c717a9b369b2520bec4155cc2b1" style="width: 100.0%; height: 100.0%;"><b>Road Intersection</b><br>ID: [ROAD]226524326<br>Composite Score: 0.453<br>Eigenvector: 0.278<br>PageRank: 0.000215<br>Betweenness: 0.157<br>Degree: 0.000376<br>Mean Edge Betweenness: 0.0525</div>`)[0];
+                popup_97aec81f5bedfbe89c75bf96e336c6e1.setContent(html_3a063c717a9b369b2520bec4155cc2b1);
+            
+        
+
+        circle_marker_5c06760d98c8b5d907203f1a9fee42cf.bindPopup(popup_97aec81f5bedfbe89c75bf96e336c6e1)
+        ;
+
+        
+    
+    
+            var circle_marker_a1d9634d408dcac64c676c45136a4c40 = L.circleMarker(
+                [49.9993326, 19.8532845],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_c78416443efde33b0291997edaed2d73);
+        
+    
+        var popup_c4ea54b6dc4a8bac66b60d0c0762951d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_55d033c86306b99b45ecab6856314c2b = $(`<div id="html_55d033c86306b99b45ecab6856314c2b" style="width: 100.0%; height: 100.0%;"><b>Road Intersection</b><br>ID: [ROAD]226529269<br>Composite Score: 0.441<br>Eigenvector: 0.429<br>PageRank: 0.000171<br>Betweenness: 0.119<br>Degree: 0.000376<br>Mean Edge Betweenness: 0.0396</div>`)[0];
+                popup_c4ea54b6dc4a8bac66b60d0c0762951d.setContent(html_55d033c86306b99b45ecab6856314c2b);
+            
+        
+
+        circle_marker_a1d9634d408dcac64c676c45136a4c40.bindPopup(popup_c4ea54b6dc4a8bac66b60d0c0762951d)
+        ;
+
+        
+    
+    
+            var circle_marker_d4e52665f98d3ff65508634bd719b8e8 = L.circleMarker(
+                [50.0197952, 19.8304658],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_c78416443efde33b0291997edaed2d73);
+        
+    
+        var popup_221ffef9621a7b5f5b68d5239bd1b0a5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1b2f3d440355dc7f9a2c04875e4f5aa8 = $(`<div id="html_1b2f3d440355dc7f9a2c04875e4f5aa8" style="width: 100.0%; height: 100.0%;"><b>Road Intersection</b><br>ID: [ROAD]244398363<br>Composite Score: 0.440<br>Eigenvector: 0.505<br>PageRank: 0.00016<br>Betweenness: 0.1<br>Degree: 0.000376<br>Mean Edge Betweenness: 0.0335</div>`)[0];
+                popup_221ffef9621a7b5f5b68d5239bd1b0a5.setContent(html_1b2f3d440355dc7f9a2c04875e4f5aa8);
+            
+        
+
+        circle_marker_d4e52665f98d3ff65508634bd719b8e8.bindPopup(popup_221ffef9621a7b5f5b68d5239bd1b0a5)
+        ;
+
+        
+    
+    
+            var circle_marker_318c69216a82934ca15515a48d2380d2 = L.circleMarker(
+                [50.0593596, 19.9252909],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_c78416443efde33b0291997edaed2d73);
+        
+    
+        var popup_80d711041f1c83f55ba99d0058d6cc2b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a5282dbeebfd9d471ea2efd1e4c12c70 = $(`<div id="html_a5282dbeebfd9d471ea2efd1e4c12c70" style="width: 100.0%; height: 100.0%;"><b>Road Intersection</b><br>ID: [ROAD]226214987<br>Composite Score: 0.437<br>Eigenvector: 6.23e-06<br>PageRank: 0.000256<br>Betweenness: 0.212<br>Degree: 0.001<br>Mean Edge Betweenness: 0.0283</div>`)[0];
+                popup_80d711041f1c83f55ba99d0058d6cc2b.setContent(html_a5282dbeebfd9d471ea2efd1e4c12c70);
+            
+        
+
+        circle_marker_318c69216a82934ca15515a48d2380d2.bindPopup(popup_80d711041f1c83f55ba99d0058d6cc2b)
+        ;
+
+        
+    
+    
+            var circle_marker_0342ee657cc6c5e91e49d8044deaf2fe = L.circleMarker(
+                [50.0287942, 19.9582917],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_c78416443efde33b0291997edaed2d73);
+        
+    
+        var popup_b24bc459ccf68a229328d5c8570d822c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6e83c45dc3fa2e759b95c62db10a7786 = $(`<div id="html_6e83c45dc3fa2e759b95c62db10a7786" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>ID: [BUS]19.958765,50.028599<br>Composite Score: 0.429<br>Eigenvector: 8e-07<br>PageRank: 0.000222<br>Betweenness: 0.21<br>Degree: 0.00113<br>Mean Edge Betweenness: 0.0247</div>`)[0];
+                popup_b24bc459ccf68a229328d5c8570d822c.setContent(html_6e83c45dc3fa2e759b95c62db10a7786);
+            
+        
+
+        circle_marker_0342ee657cc6c5e91e49d8044deaf2fe.bindPopup(popup_b24bc459ccf68a229328d5c8570d822c)
+        ;
+
+        
+    
+    
+            var circle_marker_6420c8d92865fd995ccdabfa389c0018 = L.circleMarker(
+                [50.0552932, 19.9275792],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_c78416443efde33b0291997edaed2d73);
+        
+    
+        var popup_022976e279cdb25c59ef830163843cf6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4ab3c30d8c971d56bf6b04e7b53a0c74 = $(`<div id="html_4ab3c30d8c971d56bf6b04e7b53a0c74" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>ID: [BUS]19.927504,50.05518<br>Composite Score: 0.427<br>Eigenvector: 4.11e-05<br>PageRank: 0.000206<br>Betweenness: 0.227<br>Degree: 0.000877<br>Mean Edge Betweenness: 0.035</div>`)[0];
+                popup_022976e279cdb25c59ef830163843cf6.setContent(html_4ab3c30d8c971d56bf6b04e7b53a0c74);
+            
+        
+
+        circle_marker_6420c8d92865fd995ccdabfa389c0018.bindPopup(popup_022976e279cdb25c59ef830163843cf6)
+        ;
+
+        
+    
+    
+            var circle_marker_a974dafbb774369f3d0c2359ee619afe = L.circleMarker(
+                [49.9919033, 19.9128923],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_c78416443efde33b0291997edaed2d73);
+        
+    
+        var popup_b2cf6bee8884d9e1994c1321f02e8f2c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8ca38a3df8b9d8cdf1e3b63f6eccdef1 = $(`<div id="html_8ca38a3df8b9d8cdf1e3b63f6eccdef1" style="width: 100.0%; height: 100.0%;"><b>Road Intersection</b><br>ID: [ROAD]34802068<br>Composite Score: 0.420<br>Eigenvector: 0.149<br>PageRank: 0.000139<br>Betweenness: 0.181<br>Degree: 0.000313<br>Mean Edge Betweenness: 0.0726</div>`)[0];
+                popup_b2cf6bee8884d9e1994c1321f02e8f2c.setContent(html_8ca38a3df8b9d8cdf1e3b63f6eccdef1);
+            
+        
+
+        circle_marker_a974dafbb774369f3d0c2359ee619afe.bindPopup(popup_b2cf6bee8884d9e1994c1321f02e8f2c)
+        ;
+
+        
+    
+    
+            var circle_marker_a41d29050f5ab4ec9daa2bcd873314f8 = L.circleMarker(
+                [50.0263132, 19.9740647],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_c78416443efde33b0291997edaed2d73);
+        
+    
+        var popup_41349346333354e9fe10a14a5340c832 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_01ef17e33d4b689f230462d80b91dae5 = $(`<div id="html_01ef17e33d4b689f230462d80b91dae5" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>ID: [BUS]19.973761,50.026141<br>Composite Score: 0.418<br>Eigenvector: 8.02e-10<br>PageRank: 0.000245<br>Betweenness: 0.205<br>Degree: 0.000877<br>Mean Edge Betweenness: 0.0316</div>`)[0];
+                popup_41349346333354e9fe10a14a5340c832.setContent(html_01ef17e33d4b689f230462d80b91dae5);
+            
+        
+
+        circle_marker_a41d29050f5ab4ec9daa2bcd873314f8.bindPopup(popup_41349346333354e9fe10a14a5340c832)
+        ;
+
+        
+    
+    
+            var circle_marker_f9b34f61d0574012cc9c7a28dbca4f7e = L.circleMarker(
+                [50.0140176, 19.9994438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_c78416443efde33b0291997edaed2d73);
+        
+    
+        var popup_c1dd25ca1aac898121a5ea0c2c7e5afc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_130dfd0586c6ad79450483276250a65f = $(`<div id="html_130dfd0586c6ad79450483276250a65f" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>ID: [BUS]19.998852,50.013662<br>Composite Score: 0.417<br>Eigenvector: 5.97e-08<br>PageRank: 0.000206<br>Betweenness: 0.212<br>Degree: 0.001<br>Mean Edge Betweenness: 0.0283</div>`)[0];
+                popup_c1dd25ca1aac898121a5ea0c2c7e5afc.setContent(html_130dfd0586c6ad79450483276250a65f);
+            
+        
+
+        circle_marker_f9b34f61d0574012cc9c7a28dbca4f7e.bindPopup(popup_c1dd25ca1aac898121a5ea0c2c7e5afc)
+        ;
+
+        
+    
+</script>
+</html>
