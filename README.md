@@ -25,7 +25,7 @@ The goal is to identify critical nodes and segments using graph centrality metri
       <br>
     </td>
     <td align="center" width="50%">
-      <a href="https://aliakseibrown.github.io/gtfs-krakow/">
+      <a href="https://krakow.aliaksei.cloud">
         <img src="img/interactive_website.jpeg" alt="View the full interactive maps" width="360"/><br>
         <b>Interactive Maps & Plots</b>
       </a>
