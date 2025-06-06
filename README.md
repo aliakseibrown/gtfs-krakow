@@ -3,7 +3,6 @@
 **Combining GTFS and OSM Data to Identify Critical Infrastructure**
 
 ---
-
 ## Overview
 
 This project analyzes Krakow's transport network by combining:
@@ -11,6 +10,31 @@ This project analyzes Krakow's transport network by combining:
 - **OSM data**: Street network infrastructure
 
 The goal is to identify critical nodes and segments using graph centrality metrics and to visualize the integrated network.
+
+---
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://aliakseibrown.notion.site/ebd/2063202c58e08089bd59da0edf710cf9">
+        <img src="img/raport_image.jpeg" alt="View the full report" width="320"/><br>
+        <b>Project Report</b>
+      </a>
+      <br>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://aliakseibrown.github.io/gtfs-krakow/">
+        <img src="img/interactive_website.jpeg" alt="View the full interactive maps" width="360"/><br>
+        <b>Interactive Maps & Plots</b>
+      </a>
+      <br>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
@@ -142,5 +166,4 @@ MIT License
 - [Plotly](https://plotly.com/python/)
 
 ---
-
 *Created as part of a master's project on urban transport network analysis.*
