@@ -428,6 +428,8 @@ Comparing the map above with GSTM Bus Graph map we can see how the merging with 
 
 The integrated network has 54224 nodes, 75207 edges. It’s an enormous graph to calculate Betweenness Centrality. That why we added an option to merges close nodes. 
 
+The algorithm _merge_close_nodes_ integrates two complementary data structures: a kd-tree and a union-join (also known as union-find). The kd-tree is employed to efficiently identify pairs of spatially close nodes by organizing them in a multi-dimensional space, enabling fast range and nearest-neighbor queries. Once such close pairs are identified, the union-join structure is used to progressively merge them into larger clusters or connected components. This combination allows the algorithm to both detect proximity relationships and maintain a dynamic grouping of nodes, ultimately merging all sufficiently close nodes into cohesive groups.
+
 If *merge_close_nodes=True,* nodes that are spatially very close (within *distance_threshold*) are merged, reducing redundancy at intersections where bus and road nodes nearly overlap. 
 
 GTFS bus segment endpoints and OSM road intersections may not align perfectly due to data precision, but merging helps create a more realistic, connected multimodal network.
