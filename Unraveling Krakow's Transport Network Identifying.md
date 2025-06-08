@@ -686,10 +686,16 @@ Here’s a visualization of the top 10 betweenness nodes.
 **Simulate removal of the critical bridge node**
 
 Let’s simulate the removal of [BUS]19.929274,50.052866, the bridge bottleneck which we’ve been looking at  9.1 Eigenvector centrality and analyze the impact.
+![2025-06-04 at 20.28.10.jpeg](img/the_node_under_removal.png)
+
+One of the observations why this node is in the list of the top in Betweenness centrality and the Eigenvector centrality is due to the Road closure of the Grunwaldski bridge which is important part of the cities road network system. Without a possibility cars and buses to have alternative the only way to get in the center and to the north part of the city is using the II Obwodnica bridge, which takes the load of the closed bridge. It is interesting why there is only active bus connection on the closed bridge, but that could a relevant mistake in the GTFS bus data.
+
+![2025-06-04 at 20.28.10.jpeg](img/the_node_under_removal_google_map.png)
+![2025-06-04 at 20.28.10.jpeg](img/closed_bridge.png)
+
+But removing one node was not enough to isolate the bridge completely due to the more connections through this bridge, therefore we’ve removed a few more. Shortest paths are recalculated and the last top 10 betweenness nodes completely disappeared. 
 
 ![2025-06-05 at 20.41.57.jpeg](img/bridge_removal_impact_map.jpeg)
-
-When we removed a bridge node, a few more nodes to completely isolate the bridge, shortest paths are recalculated and the last top 10 betweenness nodes completely disappeared. 
 
 The largest component shrinks significantly and some many nodes became disconnected, this confirms the bridge is a single point of failure.
 
@@ -780,3 +786,15 @@ We performed a comprehensive analysis of Kraków’s urban transport network by 
 Our analysis identified the most critical nodes and links in the city’s transport system. The results show that both road intersections and bus stops play vital roles in maintaining network connectivity and resilience. The top critical nodes, determined by a composite of centrality metrics, are a mix of key road junctions and major bus stops — highlighting the importance of both infrastructure types for urban mobility.
 
 We visualized these findings using interactive maps and plots. These insights can inform targeted interventions, such as prioritizing maintenance, improving redundancy, and enhancing emergency preparedness at the most influential points in the network. The methodology and tools developed here provide a robust framework for ongoing transport planning and resilience analysis in Kraków and can be adapted for other cities and multimodal systems.
+
+There is one more observations about our multimodal graph. The Google Maps shows red traffic roads, but our multimodal network doesn't reflect this congestion, and whether this could be due to.
+
+![Screenshot 2025-06-08 at 15.36.30.png](img/unrevealed_node_google_map.png)
+
+The threshold merges nodes *distance_threshold=0.0003 in* create_multimodal_network that are close together (about 30 meters apart). If the threshold is too high, it can merge many intersections and endpoints, simplifying the network and possibly bypassing some major roads. This can cause betweenness centrality to “miss” important roads, because the network structure no longer forces shortest paths through them.
+
+![Screenshot 2025-06-08 at 15.14.04.png](img/unrevealed_node.png)
+
+But this should not impact traffic or congestion, only affects topology simplification. 
+
+Another reason that this is very relevant for traffic, which tends to spike around 16:00. Our code does not model time-dependent travel times or traffic. Even GTFS data is scheduled, not live, it won’t adapt to rush hour delays.
